@@ -1,9 +1,9 @@
 # Mediation Agent
 
 ## Contact
-Digital Enabling GmbH
-Bahnhofstr. 29
-94424 Arnstorf
+Digital Enabling GmbH  
+Bahnhofstr. 29  
+94424 Arnstorf  
 info@digital-enabling.com
 
 ## License
