@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSIMediator</name>
+    </assembly>
+    <members>
+        <member name="T:SSIMediator.Agent.CustomDeviceInfoRecord">
+            <inheritdoc/>
+        </member>
+        <member name="T:SSIMediator.Agent.CustomMediatorForwardHandler">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.Agent.CustomMediatorForwardHandler.#ctor(Hyperledger.Aries.Storage.IWalletRecordService,Hyperledger.Aries.Storage.IWalletService,Hyperledger.Aries.Routing.IRoutingStore,Hyperledger.Aries.Contracts.IEventAggregator)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.Agent.CustomMediatorForwardHandler.ProcessAsync(Hyperledger.Aries.Features.Routing.ForwardMessage,Hyperledger.Aries.Agents.IAgentContext,Hyperledger.Aries.Agents.UnpackedMessageContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SSIMediator.Agent.CustomRoutingInboxHandler">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.Agent.CustomRoutingInboxHandler.#ctor(Hyperledger.Aries.Storage.IWalletRecordService,Hyperledger.Aries.Storage.IWalletService,Hyperledger.Aries.Routing.IRoutingStore,Microsoft.Extensions.Options.IOptions{Hyperledger.Aries.Configuration.AgentOptions},Microsoft.Extensions.Logging.ILogger{SSIMediator.Agent.CustomRoutingInboxHandler})">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.Agent.CustomRoutingInboxHandler.ProcessAsync(Hyperledger.Aries.Agents.IAgentContext,Hyperledger.Aries.Agents.UnpackedMessageContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SSIMediator.AriesFrameworkCustom.CustomMediationAgent">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.AriesFrameworkCustom.CustomMediationAgent.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.AriesFrameworkCustom.CustomMediationAgent.Invoke(Microsoft.AspNetCore.Http.HttpContext,Hyperledger.Aries.Agents.IAgentProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SSIMediator.Authentication.AuthenticationAttribute.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SSIMediator.Controllers.LogLevelController">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.Controllers.LogLevelController.Put(SSIMediator.Model.LogLevel)">
+            <summary>
+            Sets the log level:
+            Verbose = 0,
+            Debug = 1,
+            Information = 2,
+            Warning = 3,
+            Error = 4,
+            Fatal = 5
+            </summary>
+        </member>
+        <member name="T:SSIMediator.Model.LogLevel">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Verbose">
+            <inheritdoc /> 
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Debug">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Information">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Warning">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Error">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Fatal">
+            <inheritdoc />
+        </member>
+        <member name="T:SSIMediator.OwnMediatorAgent">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.OwnMediatorAgent.#ctor(System.IServiceProvider)">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.OwnMediatorAgent.ConfigureHandlers">
+            <inheritdoc />
+        </member>
+        <member name="T:SSIMediator.Program">
+            <inheritdoc />
+        </member>
+        <member name="P:SSIMediator.Program.LoggingLevelSwitch">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.Program.Main(System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.Program.CreateHostBuilder(System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="T:SSIMediator.Startup">
+            <inheritdoc /> 
+        </member>
+        <member name="M:SSIMediator.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <inheritdoc /> 
+        </member>
+        <member name="P:SSIMediator.Startup.Configuration">
+            <inheritdoc /> 
+        </member>
+        <member name="M:SSIMediator.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <inheritdoc /> 
+        </member>
+        <member name="M:SSIMediator.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <inheritdoc /> 
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions">
+            <summary>
+            <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> extension methods
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows default agent configuration
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows agent configuration by specifying a custom middleware
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+    </members>
+</doc>
