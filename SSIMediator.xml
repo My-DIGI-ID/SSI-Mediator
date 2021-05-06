@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSIMediator</name>
+    </assembly>
+    <members>
+        <member name="M:SSIMediator.Agent.CustomMediatorForwardHandler.#ctor(Hyperledger.Aries.Storage.IWalletRecordService,Hyperledger.Aries.Storage.IWalletService,Hyperledger.Aries.Routing.IRoutingStore,Hyperledger.Aries.Contracts.IEventAggregator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hyperledger.Aries.Routing.MediatorForwardHandler"/> class.
+            </summary>
+            <param name="recordService"></param>
+            <param name="walletService"></param>
+            <param name="routingStore"></param>
+            <param name="eventAggregator"></param>
+        </member>
+        <member name="P:SSIMediator.Agent.CustomMediatorForwardHandler.SupportedMessageTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.Agent.CustomMediatorForwardHandler.ProcessAsync(Hyperledger.Aries.Features.Routing.ForwardMessage,Hyperledger.Aries.Agents.IAgentContext,Hyperledger.Aries.Agents.UnpackedMessageContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:SSIMediator.Controllers.LogLevelController">
+            <inheritdoc />
+        </member>
+        <member name="M:SSIMediator.Controllers.LogLevelController.Put(SSIMediator.Model.LogLevel)">
+            <summary>
+            Sets the log level:
+            Verbose = 0,
+            Debug = 1,
+            Information = 2,
+            Warning = 3,
+            Error = 4,
+            Fatal = 5
+            </summary>
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Debug">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Information">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Warning">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Error">
+            <inheritdoc />
+        </member>
+        <member name="F:SSIMediator.Model.LogLevel.Fatal">
+            <inheritdoc />
+        </member>
+        <member name="P:SSIMediator.Model.Usage.Day">
+            <inheritdoc />
+        </member>
+        <member name="P:SSIMediator.Model.Usage.CredOffers">
+            <inheritdoc />
+        </member>
+        <member name="P:SSIMediator.Model.Usage.CredRevokes">
+            <inheritdoc />
+        </member>
+        <member name="P:SSIMediator.Model.Usage.Proofs">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions">
+            <summary>
+            <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> extension methods
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows default agent configuration
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ApplicationBuilderExtensions.UseAriesFramework``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Allows agent configuration by specifying a custom middleware
+            </summary>
+            <param name="aApplicationBuilder">App.</param>
+        </member>
+    </members>
+</doc>
